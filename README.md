@@ -48,19 +48,19 @@ I can not host the ROM image here as they are copyrighted. I have supplied a 1k 
 
 There are three ROM binaries I was supplied with, one each from the three original 6530's:
 
-- EE1712\_82219\_DG\_MOS6530\_009.bin
+- EE1712_82219_DG_MOS6530_009.bin
 
-- EE1712\_82219\_DG\_MOS6530\_010.bin
+- EE1712_82219_DG_MOS6530_010.bin
 
-- EE1712\_82219\_DG\_MOS6530\_011.bin
+- EE1712_82219_DG_MOS6530_011.bin
 
 To generate a ROM binary for the board on Linux or Mac in the terminal:
 
-`cat Blank1k.bin Blank1k.bin Blank1k.bin EE1712\_82219\_DG\_MOS6530\_009.bin Blank1k.bin EE1712\_82219\_DG\_MOS6530\_010.bin EE1712\_82219\_DG\_MOS6530\_011.bin Blank1k.bin \> AdaptorROM.bin`
+`cat Blank1k.bin Blank1k.bin Blank1k.bin EE1712_82219_DG_MOS6530_009.bin Blank1k.bin EE1712_82219_DG_MOS6530_010.bin EE1712_82219_DG_MOS6530_011.bin Blank1k.bin > AdaptorROM.bin`
 
 And on the Windows command prompt:
 
-`copy /b Blank1k.bin+Blank1k.bin+Blank1k.bin+EE1712\_82219\_DG\_MOS6530\_009.bin+Blank1k.bin+EE1712\_82219\_DG\_MOS6530\_010.bin+EE1712\_82219\_DG\_MOS6530\_011.bin+Blank1k.bin AdaptorROM.bin`
+`copy /b Blank1k.bin+Blank1k.bin+Blank1k.bin+EE1712_82219_DG_MOS6530_009.bin+Blank1k.bin+EE1712_82219_DG_MOS6530_010.bin+EE1712_82219_DG_MOS6530_011.bin+Blank1k.bin AdaptorROM.bin`
 
 You will first need to `cd` to the directory the ROMs are in. This will give you an 8kB ROM image ready to burn to a 27C64 or equivalent EPROM.
 
@@ -68,7 +68,7 @@ You will first need to `cd` to the directory the ROMs are in. This will give you
 
 To generate the required binary, create the `AdaptorROM.bin` file as previously instructed, then:
 
-`cat AdaptorROM.bin AdaptorROM.bin AdaptorROM.bin AdaptorROM.bin \> AdaptorROM32k.bin`
+`cat AdaptorROM.bin AdaptorROM.bin AdaptorROM.bin AdaptorROM.bin > AdaptorROM32k.bin`
 
 or on Windows:
 
@@ -116,35 +116,35 @@ Please **do not** modify your board if there are no bodge wires, as it is the ne
 
 **IC4:**
 
-- Pin 9 -\> Pin 18
+- Pin 9 -> Pin 18
 
 **IC8:**
 
-- Pin 10 -\> IC29 pins 10, 9
+- Pin 10 -> IC29 pins 10, 9
 
-- Pin 11 -\> IC40 pin 1
+- Pin 11 -> IC40 pin 1
 
-- Pin 12 -\> IC40 pin 2
+- Pin 12 -> IC40 pin 2
 
-- Pin 13 -\> IC40 pin 4
+- Pin 13 -> IC40 pin 4
 
-- Pin 14 -\> IC40 pin 5
+- Pin 14 -> IC40 pin 5
 
 **IC29:**
 
-- Pins 1, 2 -\> J2-W (originally wired to IC4 pin 28)
+- Pins 1, 2 -> J2-W (originally wired to IC4 pin 28)
 
-- Pin 3 -\> Pin 5
+- Pin 3 -> Pin 5
 
-- Pin 4 -\> IC40 pin 6
+- Pin 4 -> IC40 pin 6
 
-- Pin 8 -\> IC40 pin 3
+- Pin 8 -> IC40 pin 3
 
 The following traces are **cut**:
 
 **IC4:**
 
-- Pin 9 -\> J1 (cut near J1)
+- Pin 9 -> J1 (cut near J1)
 
 - Pin 18 (cut near pin and on trace near J2)
 
@@ -152,11 +152,11 @@ The following traces are **cut**:
 
 **IC29:**
 
-- Pins 1, 2 -\> IC40 pin 2
+- Pins 1, 2 -> IC40 pin 2
 
-- Pin 5 -\> IC40 pin 1
+- Pin 5 -> IC40 pin 1
 
-- Pin 13 -\> IC40 pin 3 (cut near via)
+- Pin 13 -> IC40 pin 3 (cut near via)
 
 ## Protection Diodes
 
