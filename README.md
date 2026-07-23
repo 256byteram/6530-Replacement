@@ -112,7 +112,7 @@ This is because the original MOS 6520's would naturally float to a logic high. T
 
 ## Bodge Wires and Cuts
 
-Please **do not** modify your board if there are no bodge wires, as it is the newer revision. This information is provided as a reference for early revision boards that needed the modifications. Thy are as follows:
+Please **do not** modify your board if there are no bodge wires, as it is the newer revision. This information is provided as a reference for early revision boards that needed the modifications. They are as follows:
 
 **IC4:**
 
